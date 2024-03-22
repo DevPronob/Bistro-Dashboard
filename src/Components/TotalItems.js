@@ -28,7 +28,7 @@ export default function TotalItems() {
         },
     ]
   return (
-    <div className='flex items-center justify-around pt-8 gap-4 px-4'>
+    <div className='flex flex-col gap-5 items-center justify-center lg:flex-row lg:items-center lg:justify-around pt-8 lg:gap-4 px-4'>
         {
             items.map(ite =>{
                 return <div className='bg-white p-[40px] rounded-lg flex items-center gap-[35px]'>

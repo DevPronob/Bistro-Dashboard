@@ -7,6 +7,7 @@ import Map from './Map';
 import img1 from '../Assets/profileImg1.jpg'
 import img2 from '../Assets/profileimg2.jpg'
 import { FiMapPin } from "react-icons/fi";
+import '../Pages/Dashbooard/Dashboard.css'
 
 export default function DetailsBars() {
     const [selection, setSelection] = useState('one_year');
@@ -23,7 +24,7 @@ export default function DetailsBars() {
 
   const style2 = { color: "#ffffff", }
   return (
-    <div className='grid grid-cols-2 gap-8  flex-row mt-6 px-4 rounded-md'>
+    <div className='grid grid-cols-1 gap-8 flex flex-col md:flex-row mt-6 px-4 rounded-md lg:grid lg:grid-cols-2 lg:flex-row'>
 <div className='bg-white p-6 rounded-md '>
 <ResponsiveContainer width={450} height={300}>
         <AreaChart
@@ -42,10 +43,10 @@ export default function DetailsBars() {
 
 
 
-<div className='w-[510px] bg-[white] p-[20px] rounded-[10px]'>
+<div className='w-full bg-[white] p-[20px] rounded-[10px]  lg:w-[510px] lg:bg-[white] lg:p-[20px] lg:rounded-[10px]'>
 
 
-    <div className='flex items-center justify-between p-[15px]'>
+    <div className='hidden lg:flex lg:items-center lg:flex-row lg:justify-between gap-5 lg:p-[15px]'>
         <h3>Order Summary</h3>
     <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown1" class="text-black bg-white border border-[#EEEEEE] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Month<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -69,7 +70,7 @@ export default function DetailsBars() {
 
 
 
-    <div className='flex items-center text-[13px]'>
+    <div className='hidden lg:flex lg:items-center lg:text-[13px]'>
         <div className='p-[20px] border-r border-b border-l border-t border-black'>
             <h5>1256K</h5>
             <p>On Delivery</p>
@@ -88,7 +89,7 @@ export default function DetailsBars() {
         </div>
     </div>
 
-    <div className='bg-[#d6fbff52] mt-3  flex items-center justify-between p-[11px]'>
+    <div className='flex flex-col items-baseline w-full gap-10 lg:bg-[#d6fbff52] lg:mt-3 lg:flex-row  lg:flex lg:items-center lg:justify-between lg:p-[11px]'>
         <p className='text-[black]'>New Order</p>
         <p>1525K</p>
         <p className='flex gap-2 items-center'>View All <FaArrowRight /></p>
@@ -96,7 +97,7 @@ export default function DetailsBars() {
     
 </div>
 
-<div className='bg-white p-6 rounded-md h-[302px]'>
+<div className='bg-white p-6 rounded-md h-[302px] w-full'>
 <MapChart></MapChart>
 </div>
 

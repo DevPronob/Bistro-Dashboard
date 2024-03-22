@@ -22,7 +22,7 @@ export default function Navbar({showSidebar,setShowSidebar,toggleSidebar}) {
 </form>
 
         </div>
-        <div className='flex items-center gap-6'>
+        <div className='hidden lg:flex lg:items-center lg:gap-6'>
         <span className='bg-[#eeeeee] p-[10px] rounded-2xl cursor-pointer'><FaRegBell size={16} /></span>
         <span className='bg-[#eeeeee] p-[10px] rounded-2xl cursor-pointer'><FaRegMessage size={16} /></span>
         <span className='bg-[#eeeeee] p-[10px] rounded-2xl cursor-pointer'><CgProfile size={16}/></span>

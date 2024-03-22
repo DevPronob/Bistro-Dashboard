@@ -24,7 +24,7 @@ export default function Dashboard() {
 
 
        
-        <div className={`col-span-2 h-full  overflow-hidden relative  block`}>
+        <div className='col-span-2 h-full  overflow-hidden relative  block '>
         <Sidebar toggleSidebar ={toggleSidebar} showSidebar ={showSidebar} setShowSidebar ={setShowSidebar}></Sidebar>
         </div>
         <div className='col-span-8 relative'>

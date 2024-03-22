@@ -4,7 +4,7 @@ import food2 from '../Assets/food2.jpg'
 import food13 from '../Assets/food3.jpg'
 export default function ProductDetails() {
   return (
-    <div class="grid grid-cols-10 gap-8 px-4 mt-5">
+    <div class="flex flex-col lg:grid lg:grid-cols-10 gap-8 px-4 mt-5">
   <div class="col-span-6 bg-white">
 
 
