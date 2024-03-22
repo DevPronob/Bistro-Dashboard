@@ -4,12 +4,12 @@ import { FaRegMessage } from "react-icons/fa6";
 import { CgProfile } from "react-icons/cg";
 import { CiSearch } from "react-icons/ci";
 import { GiHamburgerMenu } from 'react-icons/gi';
-export default function Navbar({displaySidebar,handleSidebarDisplay}) {
+export default function Navbar({showSidebar,setShowSidebar,toggleSidebar}) {
     const style = { color: "#999999", }
   return (
-    <div className='flex items-center justify-between pl-[10px] pb-[14px] pr-[15px] pt-[11px] px-4 w-full shadow-sm shadow-bottom'>
+    <div className='flex items-center justify-between z-25   bg-white pl-[10px] pb-[14px] pr-[15px] pt-[11px] px-4 w-full shadow-sm shadow-bottom'>
       {
-            !displaySidebar && <span onClick={handleSidebarDisplay}><GiHamburgerMenu /></span>
+             <span className='mobile-menu' onClick={toggleSidebar}><GiHamburgerMenu /></span>
         }
         <div>
             

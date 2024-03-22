@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Sidebar from './Sidebar'
 import MainContent from './MainContent'
 import Navbar from '../../Components/Navbar';
@@ -8,31 +8,27 @@ import AddMenu from './AddMenu';
 import Customer from './Customer';
 import Analytics from './Analytics';
 
+import '../../Pages/Dashbooard/Dashboard.css'
+
 export default function Dashboard() {
-    const MOBILE_VIEW = window.innerWidth < 468;
-    const [displaySidebar, setDisplaySidebar] = useState(!MOBILE_VIEW);
+  const [showSidebar, setShowSidebar] = useState(false);
 
-
-  const handleSidebarDisplay = (e) => {
-    e.preventDefault();
-    if (window.innerWidth <= 468) {
-      setDisplaySidebar(!displaySidebar);
-    } else {
-      setDisplaySidebar(false);
-    }
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
   };
 
+
   return (
-    <div className={`grid ${displaySidebar ? 'grid-cols-10' : ''}`}>
+    <div className={`grid  grid-cols-10`}>
 
 
 
        
-        <div className={`col-span-2 h-[100vh] border-r border-gray-400 overflow-hidden ${displaySidebar ? 'block' : 'hidden'}`}>
-        <Sidebar></Sidebar>
+        <div className={`col-span-2 h-full  overflow-hidden relative  block`}>
+        <Sidebar toggleSidebar ={toggleSidebar} showSidebar ={showSidebar} setShowSidebar ={setShowSidebar}></Sidebar>
         </div>
-        <div className='col-span-8'>
-        <Navbar displaySidebar ={displaySidebar} handleSidebarDisplay ={handleSidebarDisplay}></Navbar>
+        <div className='col-span-8 relative'>
+        <Navbar showSidebar ={showSidebar} setShowSidebar ={setShowSidebar} toggleSidebar ={toggleSidebar}></Navbar>
         <Routes>
         <Route path="/" element={ <MainContent></MainContent>} />
         <Route path="/dashboard/order" element={<OrderList></OrderList>} />

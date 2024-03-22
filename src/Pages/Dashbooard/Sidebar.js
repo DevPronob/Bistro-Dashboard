@@ -7,7 +7,9 @@ import { CgProfile } from "react-icons/cg";
 import { IoAnalyticsSharp } from "react-icons/io5";
 import { FaTableCells } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-export default function Sidebar() {
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { RxCross2 } from "react-icons/rx";
+export default function Sidebar({showSidebar,setShowSidebar,toggleSidebar}) {
     const items =[
         {
             title:"Dashboard",
@@ -41,7 +43,10 @@ export default function Sidebar() {
         },
     ]
   return (
-    <div className='sticky top-0'>
+    <div className={`z-30 bg-white border-box shadow border-black fixed sidebar ${showSidebar ? 'show-sidebar' : ''}`}>
+        {
+             <span className='mobile-menu' onClick={toggleSidebar}><RxCross2 size={23} /></span>
+        }
         <div className='w-full flex items-center justify-center gap-[36px]'>
         <img src={logo} alt="logo" width="120" height="120"></img>
         </div>
