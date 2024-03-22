@@ -14,7 +14,7 @@ export default function analytics() {
         <p>Analytics / Analytics</p>
         </div>
         <div className='p-8'>
-        <div class="grid grid-cols-10 gap-8 px-4 mt-5">
+        <div class="flex flex-col  lg:grid lg:grid-cols-10 lg:gap-8 lg:px-4 lg:mt-5">
     <div class="col-span-6 p-18 shadow-lg m-[15px] bg-white ">
   
   
@@ -30,7 +30,7 @@ export default function analytics() {
   
   
   <div className='px-3 flex items-center gap-[20px] my-3 px-3'>
-      <div className='flex text-[11px] gap-[12px] items-center '>
+      <div className='flex text-[11px] gap-[12px] items-center w-full'>
       <img className='w-[50px] h-[35px]' src={food1}alt="Girl in a jacket" width="500" height="600"/>
       <div>
           <p>Sweet cheezy pizza</p>
@@ -49,7 +49,7 @@ export default function analytics() {
           <h5>3,35 Total Sales</h5>
       </div>
       
-      <div style={{ width: 50, height: 50,marginLeft:212 }}>
+      <div className='w-[50px] h-[50px] ml-[0px]   lg:w-[50px] lg:h-[50px] lg:ml-[212px]'>
       <CircularProgressbar value={66} text={`${66}%`} />;
       </div>
       
@@ -58,8 +58,8 @@ export default function analytics() {
   <hr/>
   
   
-  <div className='px-3 flex items-center gap-[20px] my-3 px-3'>
-      <div className='flex text-[11px] gap-[12px] items-center '>
+  <div className='px-3 flex items-center gap-[20px] my-3 px-3 w-full'>
+      <div className='flex text-[11px] gap-[12px] items-center w-full'>
       <img className='w-[50px] h-[35px]' src={food1}alt="Girl in a jacket" width="500" height="600"/>
       <div>
           <p>Sweet cheezy pizza</p>
@@ -78,7 +78,7 @@ export default function analytics() {
           <h5>3,35 Total Sales</h5>
       </div>
       
-      <div style={{ width: 50, height: 50,marginLeft:212 }}>
+      <div className='w-[50px] h-[50px] ml-[0px]   lg:w-[50px] lg:h-[50px] lg:ml-[212px]'>
       <CircularProgressbar value={66} text={`${66}%`} />;
       </div>
       
@@ -87,8 +87,8 @@ export default function analytics() {
   <hr/>
   
   
-  <div className='px-3 flex items-center gap-[20px] my-3 px-3'>
-      <div className='flex text-[11px] gap-[12px] items-center '>
+  <div className='px-3 flex items-center gap-[20px] my-3 px-3 w-full'>
+      <div className='flex text-[11px] gap-[12px] items-center w-full'>
       <img className='w-[50px] h-[35px]' src={food1}alt="Girl in a jacket" width="500" height="600"/>
       <div>
           <p>Sweet cheezy pizza</p>
@@ -107,7 +107,7 @@ export default function analytics() {
           <h5>3,35 Total Sales</h5>
       </div>
       
-      <div style={{ width: 50, height: 50,marginLeft:212 }}>
+      <div className='w-[50px] h-[50px] ml-[0px]   lg:w-[50px] lg:h-[50px] lg:ml-[212px]'>
       <CircularProgressbar value={66} text={`${66}%`} />;
       </div>
       
@@ -115,8 +115,8 @@ export default function analytics() {
   </div>
   <hr/>
 
-  <div className='px-3 flex items-center gap-[20px] my-3 px-3'>
-      <div className='flex text-[11px] gap-[12px] items-center '>
+  <div className='px-3 flex items-center gap-[20px] my-3 px-3 w-full'>
+      <div className='flex text-[11px] gap-[12px] items-center w-full'>
       <img className='w-[50px] h-[35px]' src={food1}alt="Girl in a jacket" width="500" height="600"/>
       <div>
           <p>Sweet cheezy pizza</p>
@@ -135,7 +135,7 @@ export default function analytics() {
           <h5>3,35 Total Sales</h5>
       </div>
       
-      <div style={{ width: 50, height: 50,marginLeft:212 }}>
+      <div className='w-[50px] h-[50px] ml-[0px]   lg:w-[50px] lg:h-[50px] lg:ml-[212px]'>
       <CircularProgressbar value={66} text={`${66}%`} />;
       </div>
       
